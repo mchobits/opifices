@@ -1,0 +1,5 @@
+class PageController < ApplicationController
+  caches_page :about
+  def about
+  end
+end
