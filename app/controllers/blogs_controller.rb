@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def category
-    @category = Category.find params[:id].per(6)
+    @category = Category.find(params[:id]).per(6)
     if @category
       @page_title = @category.name
       @blogs = Blog.order(created_at: :desc).where(category_id: @category.id).page(params[:page])
