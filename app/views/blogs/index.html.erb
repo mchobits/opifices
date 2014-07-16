@@ -15,6 +15,11 @@
             <%= link_to '阅读全文',blog_path(blog.slug_url),class:'btn btn-danger' %></div>
         </div>
         <% end %>
+      <div class="panel">
+        <div class="panel-body">
+          <%= paginate @blogs %>
+        </div>
+      </div>
     </div>
     <%= render partial:'sidebar' %>
   </div>
