@@ -7,8 +7,6 @@
     paginator:     the paginator that renders the pagination tags inside
 -%>
 <%= paginator.render do -%>
-    <div class="panel">
-      <div class="panel-body">
         <ul class="pagination">
           <%= prev_page_tag %>
           <% each_page do |page| -%>
@@ -20,6 +18,4 @@
           <% end -%>
           <%= next_page_tag %>
         </ul>
-      </div>
-    </div>
 <% end -%>
