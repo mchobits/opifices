@@ -1,24 +1,24 @@
 source 'https://ruby.taobao.org'
 
 
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.6'
 gem 'mysql2'
 gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 2.5.1'
+gem 'uglifier', '>= 2.5.3'
 gem 'cells'
 
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 
-gem 'acts-as-taggable-on','>= 3.3.0'
+gem 'acts-as-taggable-on','>= 3.4.1'
 gem 'carrierwave'
-gem 'qiniu', '~> 6.2.4'
 gem 'carrierwave-qiniu'
 gem 'actionpack-page_caching'
 gem 'kaminari'
 gem 'nokogiri'
 gem 'bootstrap_helper', github:'paoxue/bootstrap-helper'
+gem 'sitemap_generator'
 #gem 'jbuilder', '~> 2.0'
 
 gem 'puma' # 多线程的web服务器

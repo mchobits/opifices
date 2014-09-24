@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #page-about {
-  background: #fff;
   .img {
     width: 50%;
     padding-left: 0;
@@ -10,9 +9,9 @@
 
   }
   .about {
-    background: #efefef;
-    padding-top: 50px;
-    padding-bottom: 25px;
+    background: #fff;
+    padding-top: 6px;
+    padding-bottom: 6px;
     img{
       width: 100%;
     }
@@ -33,7 +32,7 @@
       margin-top:44px;
       h1{
         text-transform:uppercase;
-        font-size:18px;
+        font-size:16px;
         color:#343434;
         line-height:20px;
       }

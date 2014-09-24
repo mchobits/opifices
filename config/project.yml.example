@@ -1,7 +1,8 @@
 development: &defaults
   sitename: 匠人线 - 手线's Blog,游离于科技和人文的十字路口
+  siteurl: "http://127.0.0.1:3000"
   admin_user: # Digest::MD5.hexdigest(%w($uname$ Authorization $password$).join(':'))
-    linearsky: d3fbd6738c51495b31b72c8e6df08b19 #默认密码ruby
+    ruby: d3fbd6738c51495b31b72c8e6df08b19 #默认密码ruby
   qiniu:
     bucket: opifices
     access: <%= ENV['QINIU_ACCESS'] %>
@@ -12,5 +13,3 @@ test:
 
 production:
   <<: *defaults
-  admin_user:
-    linearsky: dinglinet!

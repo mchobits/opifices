@@ -5,5 +5,6 @@ class Blog < ActiveRecord::Base
   belongs_to :category
   mount_uploader :thumb, PhotoUploader
 
+  scope :recent, -> {order(created_at: :desc)} #按博文发布时间排序
 
 end

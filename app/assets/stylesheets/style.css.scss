@@ -14,7 +14,7 @@ header.navbar-default {
   .navbar-nav > li > a{
     color: #666;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     &:hover{
       color: #000;
     }
@@ -28,7 +28,7 @@ header.navbar-default {
     clear: both;
     width: 100%;
     h3{
-      font-size: 16px;
+      font-size: 18px;
       line-height: 100%;
       font-weight: 700;
       margin-bottom: 25px;
@@ -38,11 +38,11 @@ header.navbar-default {
   #namecard{
     text-align: center;
     h5{
-      font-size: 16px;
+      font-size: 18px;
       margin-top: 30px;
     }
     p{
-      ont-size: 14px;
+      ont-size: 16px;
       line-height: 20px;
       color: #8c8a8a;
     }
@@ -53,5 +53,4 @@ footer{
   font-size: 12px;
   padding: 8px;
   color:#555;
-  line-height: 25px;
 }

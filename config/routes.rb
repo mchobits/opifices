@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   end
 
   root 'blogs#index'
-  get 'category/:id' => 'blogs#category', :as => :category
-  get 'blog/:slug.shtml' => 'blogs#show', :as => :blog
-  get ':action.shtml',controller: 'page', :as => :page
+  get 'feed' => 'blogs#feed',as: :feed
+  get 'category/:id' => 'blogs#category', as: :category
+  get 'blog/:slug.shtml' => 'blogs#show', as: :blog
+  get ':action.shtml',controller: 'page', as: :page
 end

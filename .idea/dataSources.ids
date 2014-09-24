@@ -3,4 +3,10 @@
   <data-source source="LOCAL" name="Rails opifices: production" uuid="5f6a3aac-dc8e-4768-9114-d7a2eeb3e199">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails opifices: development" uuid="430e332c-5ca1-4e4d-97ab-0041a2174dd8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails opifices: test" uuid="761b4cd3-565b-4fe5-9169-f8074bddf0c6">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

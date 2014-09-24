@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title><%= CFG['sitename'] %></title>
+    <link><%=CFG['siteurl']%></link>
+    <language>zh-CN</language>
+    <copyright>Copyright 2014, Opifices.com</copyright>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <atom:link href="<%=CFG['siteurl']%>/feed" rel="self" type="application/rss+xml" />
+    <% @blogs.each do |blog| %>
+     <% cache("blog/#{blog.slug_url}/#{blog.updated_at.to_i}/feed") do %>
+    <item>
+      <title><%= blog.title %></title>
+      <description>
+        <![CDATA[ <%= plaintext_summary blog.context %> ]]>
+      </description>
+      <pubDate><%= blog.created_at.rfc822 %></pubDate>
+      <link><%=CFG['siteurl']%>/blog/<%= blog.slug_url %></link>
+      <guid isPermaLink="false"><%=CFG['siteurl']%>/blog/<%= blog.slug_url %></guid>
+    </item>
+    <% end %>
+    <% end %>
+  </channel>
+</rss>

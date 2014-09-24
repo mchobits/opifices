@@ -1,7 +1,7 @@
 class Console::BlogsController < Console::BaseController
   def index
     @page_title = '博文管理'
-    @blogs = Blog.order(created_at: :desc).page(params[:page])
+    @blogs = Blog.recent.page(params[:page])
   end
 
   def new
@@ -23,6 +23,7 @@ class Console::BlogsController < Console::BaseController
 
   def update
     if Blog.find(params[:id]).update_attributes blog_params
+      expire_page "blog/#{Blog.find(params[:id]).slug_url}.shtml"
       redirect_to console_blogs_path, notice: '更新成功'
     else
       render action:'edit'
