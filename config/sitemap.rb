@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'sitemap_generator'
+require 'yaml'
 CFG = YAML.load_file("#{Rails.root}/config/project.yml")[Rails.env]
 SitemapGenerator::Sitemap.default_host = CFG['siteurl']
 
