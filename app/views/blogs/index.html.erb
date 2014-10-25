@@ -14,7 +14,7 @@
                   <%= plaintext_summary blog.context %>
                 </div>
                 <div class="panel-footer">
-                  <%= link_to '阅读全文', blog_path(blog.slug_url), class: 'btn btn-danger' %></div>
+                  <%= link_to t('read_more'), blog_path(blog.slug_url), class: 'btn btn-danger' %></div>
               </div>
           <% end %>
       <% end %>

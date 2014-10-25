@@ -21,3 +21,12 @@
 
 en:
   hello: "Hello world"
+  read_more: "Read More"
+  toggle_menu: "Toggle Menu"
+  nav:
+    index: "Index"
+    about: "About Me"
+  search: "search"
+  rss: "RSS"
+  make_errors: "Errors"
+  comments: "commets"

@@ -8,8 +8,8 @@ Bundler.require(*Rails.groups)
 
 module Opifices
   class Application < Rails::Application
-    config.time_zone = 'Beijing'
-    config.i18n.default_locale = 'zh-CN'
+    config.time_zone = 'Taipei'
+    config.i18n.default_locale = 'zh-TW'
     I18n.enforce_available_locales = false
     # 关闭用不到的middleware以优化性能
     %w(

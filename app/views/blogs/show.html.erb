@@ -13,13 +13,13 @@
         <%= render partial:'bshare', locals:{blog: @blog} %>
         <% unless @blog.reference_url.blank? %>
           <blockquote>
-            本文转载自互联网，版权归原作者所有。 <%= link_to '[点此查看原文]',@blog.reference_url,rel:'nofollow',target: '_blank' %>
+            本文轉載自互聯網，版權歸原作者所有。 <%= link_to '[此處爲原文鏈接]',@blog.reference_url,rel:'nofollow',target: '_blank' %>
           </blockquote>
         <% end %>
         </div>
       </div>
      <div class="panel panel-default">
-       <div class="panel-heading">评论栏</div>
+       <div class="panel-heading"><%=t('comments')%></div>
        <div class="panel-body">
          <div id="disqus_thread"></div>
          <script type="text/javascript">
