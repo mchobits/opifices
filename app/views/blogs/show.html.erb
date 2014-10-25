@@ -37,3 +37,11 @@
     <%= render partial:'sidebar' %>
 </div>
 </div>
+<script>
+    $(document).on('page:change',  function() {
+        $('.hljs').each(function(i, e) {hljs.highlightBlock(e)});
+    });
+    $(document).on('page:restore', function() {
+        $('.hljs').each(function(i, e) {hljs.highlightBlock(e)});
+    });
+</script>
